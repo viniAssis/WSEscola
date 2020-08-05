@@ -1,2 +1,6 @@
+com\escola\restful\ApplicationConfig.class
+com\escola\restful\EstudanteResource.class
+com\escola\model\Status.class
 com\escola\model\Estudante.class
 com\escola\dao\ConnectionFactory.class
+com\escola\dao\EstudanteDAO.class

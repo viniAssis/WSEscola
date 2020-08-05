@@ -121,7 +121,7 @@ public class EstudanteDAO {
          ps.close();
          con.close();
 
-         resp = "Excluido";
+         resp = "Matricula "+ matricula+" excluida";
 
         } catch (Exception e) {
             resp = e.toString();
