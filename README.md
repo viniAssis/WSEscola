@@ -6,26 +6,30 @@
 
 ## URIs ##
 	
-	**GET:**  http://localhost:8080/WSEscola/webresources/estudante/{matricula}
+	GET:  http://localhost:8080/WSEscola/webresources/estudante/{matricula}
+		
 		- matricula
 		
-	**POST:** http://localhost:8080/WSEscola/webresources/estudante/excluir
+	POST: http://localhost:8080/WSEscola/webresources/estudante/excluir
+	
 		- matricula
 		
-	**POST:** http://localhost:8080/WSEscola/webresources/estudante/editar
+	POST: http://localhost:8080/WSEscola/webresources/estudante/editar
+	
 		- matricula
 		- nome
 		- sobrenome
-		- matriculaNova ( se esse parâmentro estiver vazio, não atualizará o numero da matricula)
+		- matriculaNova ( se esse parâmetro estiver vazio, não editará o numero da matricula)
 		
-	**POST:** http://localhost:8080/WSEscola/webresources/estudante/salvar
+	POST: http://localhost:8080/WSEscola/webresources/estudante/salvar
+	
 		- matricula
 		- nome
 		- sobrenome
 	
 
 ## Banco de dados ##
-	```shell
+	
 	CREATE DATABASE  IF NOT EXISTS `escola` ;
 	USE `escola`;
 
@@ -38,4 +42,4 @@
 	  `sobrenome` varchar(100) NOT NULL,
 	  PRIMARY KEY (`matricula`)
 	) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela de estudantes';
-	```
+	
